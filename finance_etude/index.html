@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="h-100" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="bootstrap-5.2.3/bootstrap-5.2.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="bootstrap-5.2.3/bootstrap-5.2.3/dist/js/bootstrap.bundle.js">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <script src="bootstrap-5.2.3/bootstrap-5.2.3/js/src/offcanvas.js"></script>
+     <link rel="stylesheet" href="index.css">
+    <title>Bienvenue dans finance-etude !</title>
+</head>
+<body class="h-100 global-container">
+
+    <header >
+        <div class="container-fluid">
+            <div class="navbar bg-light">
+                <nav class="navbar navbar-expand bg-light">
+                    <ul class="navbar-nav" style="font-size: 20px;">
+                        <img style="height: 35px;width: 30px;border-radius: 10px;" src="images/logo.jpg" alt="logo">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A-propos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Si vous avez-besoin de quelque chose ?">
+                    <button class="btn btn-danger" type="button">Recherche...</button>
+                  </form>
+            </div>
+        </div>
+
+    </header>
+
+        <div id="home" class="w-100 h-100 position-relative bg-dark">
+ 
+            <video autoplay loop muted src="video/istockphoto-1132129858-640_adpp_is.mp4" class="position-absolute w-100 h-100"></video>
+            <div class="position-absolute w-100 h-100 bg-dark opacity-50"></div>
+            <div class="position-relative w-100 h-100 d-flex align-items-center justify-content-center flex-column pb-5">
+                 
+                <p class="fs-5 text-light mb-0">Voulez-vous bien preparee votre avenir ?</p>
+                <h1 class="text-center display-1 fw-bolder text-warning">
+                    Suivez-nous avec tout les Elites de Madagascar !
+                </h1>
+                <p class="fs-5 text-light mb-4">Financement de vos etudes</p>
+                <div class="button align-items-center justify-content-center">
+                    <a href="#" class="btn btn-danger" id="firstbutt">Nouveau compte</a>
+
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-danger" id="secondbutt">Se connecter !</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Entrez votre adresse e-mail :</b></label>
+      <input type="text" placeholder="utilisateur@gmail.com" name="uname" required>
+
+      <label for="psw"><b>Mots de passe :</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="btn btn-info">Connecter mon compte !</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Souviens de moi
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
+      <span class="psw">Mots de passe <a href="#">oublie?</a></span>
+    </div>
+  </form>
+</div>
+                </div>
+
+            </div>
+       
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+</body>
+</html>
